@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class RealEstatePayback {
-
     public static void main(String[] args) {
         System.out.println(1);
         Scanner sc = new Scanner(System.in);
@@ -28,5 +27,4 @@ public class RealEstatePayback {
         }
         System.out.println("заработали: : " + totalEarned + " рублей за " + " месяцев");
     }
-
 }
