@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
@@ -15,8 +14,9 @@ public class ShoppingBudget {
             total += prices.get(bought);
             bought++;
         }
-        System.out.println("Куплено: " + bought + " товаров на сумму " + total);
+        System.out.printf(Locale.US, "Куплено: %d товаров на сумму %.2f%n", bought, total);
         System.out.printf(Locale.US, "Остаток бюджета: %.2f%n", budget - total);
-        System.out.println("Не куплено: " + (prices.size() - bought) + " товара");
+        System.out.printf(Locale.US, "Не куплено: %d товара%n", (prices.size() - bought));
+
     }
 }

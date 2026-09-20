@@ -12,7 +12,5 @@ public class Person {
         person.lastName = "Baskov";
         person.age = 25;
         person.introduce();
-        System.out.println();
-        System.out.println();
     }
 }
